@@ -22,3 +22,7 @@ classes
 obj
 
 .DS_Store
+
+.gradle
+/local.properties
+

@@ -48,8 +48,10 @@ public final class Address {
   final List<ConnectionSpec> connectionSpecs;
   final ProxySelector proxySelector;
 
-  public Address(String uriHost, int uriPort, SocketFactory socketFactory,
-      SSLSocketFactory sslSocketFactory, HostnameVerifier hostnameVerifier,
+  public Address(String uriHost, int uriPort,
+                 SocketFactory socketFactory,
+                 SSLSocketFactory sslSocketFactory,
+                 HostnameVerifier hostnameVerifier,
       CertificatePinner certificatePinner, Authenticator authenticator, Proxy proxy,
       List<Protocol> protocols, List<ConnectionSpec> connectionSpecs, ProxySelector proxySelector) {
     if (uriHost == null) throw new NullPointerException("uriHost == null");
